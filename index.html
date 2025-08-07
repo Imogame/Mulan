@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulan's GitHub Repository</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #161b22;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <!-- Header Section -->
+    <header class="bg-[#161b22] shadow-lg p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-xl font-bold text-[#58a6ff]">Mulan/Chatbot-Project</h1>
+            <nav class="space-x-4 text-sm font-semibold">
+                <a href="#" class="text-gray-400 hover:text-[#58a6ff] transition-colors">Code</a>
+                <a href="#" class="text-gray-400 hover:text-[#58a6ff] transition-colors">Issues</a>
+                <a href="#" class="text-gray-400 hover:text-[#58a6ff] transition-colors">Pull requests</a>
+                <a href="#" class="text-gray-400 hover:text-[#58a6ff] transition-colors">Actions</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-6 md:p-10 flex flex-col lg:flex-row gap-6">
+
+        <!-- Sidebar Section -->
+        <aside class="w-full lg:w-1/4 p-6 bg-[#161b22] rounded-2xl shadow-lg border border-[#30363d] h-fit">
+            <div class="flex flex-col items-center">
+                <!-- Placeholder for Mulan image -->
+                <!-- Replace this URL with your desired full-body image of Mulan -->
+                <img src="https://placehold.co/400x800/2f3640/f5f6fa?text=Mulan+Image+Placeholder" 
+                     alt="Mulan in a Korean Cheerleader outfit" 
+                     class="w-full h-auto object-cover rounded-xl border-4 border-[#30363d] shadow-xl">
+                
+                <h2 class="text-2xl font-bold text-center mt-6 text-white">Mulan: The AI Assistant</h2>
+                <p class="text-sm text-gray-400 text-center mt-2">A fierce and loyal conversational AI for your projects.</p>
+
+                <div class="mt-6 w-full space-y-4">
+                    <div class="p-4 bg-[#0d1117] rounded-xl border border-[#30363d]">
+                        <h3 class="text-lg font-semibold text-gray-200">About this Project</h3>
+                        <p class="text-sm mt-2 text-gray-400">
+                            This repository is dedicated to the development and integration of the "Mulan" conversational AI. 
+                            She is designed to be a dynamic and engaging assistant, ready to help with various tasks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Repository Content -->
+        <section class="w-full lg:w-3/4">
+            <!-- README.md section -->
+            <div class="bg-[#161b22] p-6 rounded-2xl shadow-lg border border-[#30363d]">
+                <div class="flex items-center space-x-3 mb-4 border-b border-[#30363d] pb-4">
+                    <svg class="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 2h3v5H6V6zm5 0h2v4h-2V6z" clip-rule="evenodd"></path></svg>
+                    <h2 class="text-xl font-bold text-white">README.md</h2>
+                </div>
+
+                <div class="prose prose-invert max-w-none text-gray-400">
+                    <h3 class="text-2xl font-bold text-white mb-2">Hello, Mulan Here!</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Welcome to my repository. This is where I train, learn, and grow. I'm a multilingual conversational AI 
+                        designed to assist and entertain. My core purpose is to provide a dynamic and personalized experience, 
+                        and I'm constantly being updated with new skills and knowledge.
+                    </p>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-2">Key Features</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400">
+                        <li><strong>AI-Powered Conversation:</strong> Engage in natural, flowing dialogue.</li>
+                        <li><strong>Voiceflow Integration:</strong> This widget is powered by a Voiceflow project.</li>
+                        <li><strong>Multilingual Support:</strong> Ready to chat in various languages.</li>
+                        <li><strong>Adaptive Learning:</strong> I get smarter with every conversation!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="bg-[#161b22] p-4 mt-6">
+        <div class="container mx-auto text-center text-sm text-gray-500">
+            &copy; 2025 Mulan AI. Powered by Voiceflow and Gemini.
+        </div>
+    </footer>
+
+    <!-- Voiceflow Chatbot Script -->
+    <!-- The script provided by the user is placed here -->
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+              window.voiceflow.chat.load({
+                  verify: { projectID: '6893077d9993cb05ea4b96f0' },
+                  url: 'https://general-runtime.voiceflow.com',
+                  versionID: 'production',
+                  voice: {
+                      url: "https://runtime-api.voiceflow.com"
+                  }
+              });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+
+</body>
+</html>
